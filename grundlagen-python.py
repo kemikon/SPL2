@@ -45,4 +45,4 @@ if(gewinnComputer>gewinnIch):
         print("Computer hat gewonnen")
 if(gewinnIch>gewinnComputer):
         print("Ich habe gewonnen")    
-print("game over")
+print("game over...")
