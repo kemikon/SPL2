@@ -27,11 +27,22 @@ print("Aber die coolere Zahl ", int (lieblingszahl)+10, "mag ich noch mehr!!!")
 runden = input("Wie viele Runden sollen wir spielen? ")
 runden = int(runden)
 
-for i in range(1,1+runden):
+for i in range(1, runden+1): 
+    gewinnIch = 0
+    gewinnComputer = 0
     sieger = ""
     zufallszahl = random.randint(1,6)
     if(zufallszahl ==1 or zufallszahl == 3 or zufallszahl == 5):
         sieger  = "ich"
+        gewinnIch = int(gewinnIch+1)
     else:
         sieger = "Computer"    
-    print("Runde", i, "von", i, ": Sieger:", sieger)
+        gewinnComputer = int(gewinnComputer+1)
+    print("Runde", i, "von", runden, ": Sieger:", sieger,": gewuerfelt wurde: ", zufallszahl)
+if(gewinnIch==gewinnComputer):
+        print("Unentschieden")
+if(gewinnComputer>gewinnIch):
+        print("Computer hat gewonnen")
+if(gewinnIch>gewinnComputer):
+        print("Ich habe gewonnen")    
+print("game over")
