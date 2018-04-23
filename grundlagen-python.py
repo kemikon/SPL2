@@ -1,5 +1,5 @@
 # Grundlagen-python.py
-
+import random
 # Kommentare erfolgen mit hashtag
 
 # Ausgabe von Daten 
@@ -27,5 +27,11 @@ print("Aber die coolere Zahl ", int (lieblingszahl)+10, "mag ich noch mehr!!!")
 runden = input("Wie viele Runden sollen wir spielen? ")
 runden = int(runden)
 
-for i in range(1,runden):
-    print("Runde", i, "von", i, ": Sieger:", "ich")
+for i in range(1,1+runden):
+    sieger = ""
+    zufallszahl = random.randint(1,6)
+    if(zufallszahl ==1 or zufallszahl == 3 or zufallszahl == 5):
+        sieger  = "ich"
+    else:
+        sieger = "Computer"    
+    print("Runde", i, "von", i, ": Sieger:", sieger)
