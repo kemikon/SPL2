@@ -11,39 +11,12 @@ while(gewonnen == False):
     if(erratungDerZahl == zufallszahl):
         gewonnen == True
         print("Computer hat gewonnen.", "Versuche: ", versuche )
-    if(erratungDerZahl != zufallszahl):
-        print("Zahl von dem Computer: ", errattungDerZahl)
-        nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
-        versuche = int(versuche+1)
-    if(nichtErraten == "nein"):
-        errattungDerZahl = int(errattungDerZahl+(errattungDerZahl/2))
-        if(errattungDerZahl == zufallszahl):
-                gewonnen == True
-                print("Computer hat gewonnen.", "Versuche: ", versuche )
-        if(errattungDerZahl != zufallszahl):
-                print("Zahl von dem Computer: ", errattungDerZahl)
-                nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
-                versuche = int(versuche+1)
-    if(nichtErraten == "ja"):
-        errattungDerZahl = int(errattungDerZahl-(errattungDerZahl/2))
-            if(errattungDerZahl == zufallszahl):
-                gewonnen == True
-                print("Computer hat gewonnen.", "Versuche: ", versuche )
-            if(errattungDerZahl != zufallszahl):
+            if(erratungDerZahl != zufallszahl):
                 print("Zahl von dem Computer: ", errattungDerZahl)
                 nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
                 versuche = int(versuche+1)
                 if(nichtErraten == "nein"):
-                    errattungDerZahl = int(errattungDerZahl+(errattungDerZahl/4))
-                    if(errattungDerZahl == zufallszahl):
-                        gewonnen == True
-                        print("Computer hat gewonnen.", "Versuche: ", versuche )
-                    if(errattungDerZahl != zufallszahl):
-                        print("Zahl von dem Computer: ", errattungDerZahl)
-                        nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
-                        versuche = int(versuche+1)
-                if(nichtErraten == "ja"):
-                    errattungDerZahl = int(errattungDerZahl-(errattungDerZahl/2))
+                    errattungDerZahl = int(errattungDerZahl+(errattungDerZahl/2))
                     if(errattungDerZahl == zufallszahl):
                         gewonnen == True
                         print("Computer hat gewonnen.", "Versuche: ", versuche )
@@ -56,10 +29,37 @@ while(gewonnen == False):
             if(errattungDerZahl == zufallszahl):
                 gewonnen == True
                 print("Computer hat gewonnen.", "Versuche: ", versuche )
-            if(errattungDerZahl != zufallszahl):
-                print("Zahl von dem Computer: ", errattungDerZahl)
-                nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
-                versuche = int(versuche+1)
+                if(errattungDerZahl != zufallszahl):
+                    print("Zahl von dem Computer: ", errattungDerZahl)
+                    nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
+                    versuche = int(versuche+1)
+                    if(nichtErraten == "nein"):
+                        errattungDerZahl = int(errattungDerZahl+(errattungDerZahl/4))
+                        if(errattungDerZahl == zufallszahl):
+                            gewonnen == True
+                            print("Computer hat gewonnen.", "Versuche: ", versuche )
+                        if(errattungDerZahl != zufallszahl):
+                            print("Zahl von dem Computer: ", errattungDerZahl)
+                            nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
+                            versuche = int(versuche+1)
+                    if(nichtErraten == "ja"):
+                        errattungDerZahl = int(errattungDerZahl-(errattungDerZahl/2))
+                        if(errattungDerZahl == zufallszahl):
+                            gewonnen == True
+                            print("Computer hat gewonnen.", "Versuche: ", versuche )
+                        if(errattungDerZahl != zufallszahl):
+                            print("Zahl von dem Computer: ", errattungDerZahl)
+                            nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
+                            versuche = int(versuche+1)
+    if(nichtErraten == "ja"):
+        errattungDerZahl = int(errattungDerZahl-(errattungDerZahl/2))
+        if(errattungDerZahl == zufallszahl):
+            gewonnen == True
+            print("Computer hat gewonnen.", "Versuche: ", versuche )
+        if(errattungDerZahl != zufallszahl):
+            print("Zahl von dem Computer: ", errattungDerZahl)
+            nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
+            versuche = int(versuche+1)
             if(nichtErraten == "nein"):
                 errattungDerZahl = int(errattungDerZahl+(errattungDerZahl/2))
                 if(errattungDerZahl == zufallszahl):
@@ -83,10 +83,10 @@ while(gewonnen == False):
                         if(errattungDerZahl == zufallszahl):
                             gewonnen == True
                             print("Computer hat gewonnen.", "Versuche: ", versuche )
-                            if(errattungDerZahl != zufallszahl):
-                                print("Zahl von dem Computer: ", errattungDerZahl)
-                                nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
-                                versuche = int(versuche+1)
+                        if(errattungDerZahl != zufallszahl):
+                            print("Zahl von dem Computer: ", errattungDerZahl)
+                            nichtErraten = input("Wenn die Zufallszahl ist > als die Zahl von dem computer, schreiben Sie 'nein', wenn die Zufallszahl ist < als die Zahl von dem Computer, schreiben Sie 'ja'")
+                            versuche = int(versuche+1)
                     if(nichtErraten == "ja"):
                         errattungDerZahl = int(errattungDerZahl-(errattungDerZahl/2))
                         if(errattungDerZahl == zufallszahl):
